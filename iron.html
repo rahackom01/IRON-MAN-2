@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armor Protocol – Suit-Up Sequence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="iron.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+<canvas id="stage"></canvas>
+<div id="loader"><p id="loadmsg">Loading armor systems…</p></div>
+
+<header class="nav">
+  <span>STARK//PROTOCOL</span>
+  <nav><a href="#sequence">Suit-up</a><a href="#tech">Technology</a><a href="#specs">Specs</a></nav>
+</header>
+
+<section class="hero">
+  <h1>INITIATING ARMOR PROTOCOL</h1>
+  <p>The Future Is Engineered.</p>
+  <button id="begin">BEGIN SUIT-UP</button>
+  <div class="scrollcue">SCROLL TO TRANSFORM<i></i></div>
+</section>
+
+<section id="sequence" aria-label="Suit-up sequence"></section>
+
+<aside id="hud" aria-live="polite">
+  <div class="hud-n"><b id="hn">01</b>/08</div>
+  <div class="hud-t" id="ht"></div>
+  <div class="hud-d" id="hd"></div>
+  <div class="bar"><i id="hb"></i></div>
+</aside>
+<div id="online"><h2>ARMOR SYSTEM ONLINE</h2><button id="replay">REPLAY SEQUENCE</button></div>
+
+<section class="panel" id="showcase">
+  <h2>Full armor showcase</h2>
+  <p>Move your pointer across the screen to rotate the camera around the suit.</p>
+</section>
+<section class="panel" id="tech">
+  <h2>Arc reactor core</h2>
+  <p>A palladium-free fusion cell feeds the repulsors, flight system and HUD. The ring pulses with load.</p>
+  <div class="reactor"></div>
+</section>
+<section class="panel" id="specs">
+  <h2>Specifications</h2>
+  <p class="note">Fictional demonstration data.</p>
+  <dl>
+    <dt>Output</dt><dd>3.2 GJ/s</dd>
+    <dt>Flight ceiling</dt><dd>14,000 m</dd>
+    <dt>Plating</dt><dd>Gold-titanium alloy</dd>
+    <dt>Assembly time</dt><dd>6.8 s</dd>
+  </dl>
+</section>
+<footer>Original procedural placeholder armor. Replace with a licensed model for a public launch.</footer>
+<script type="module" src="iron.js"></script>
+</body>
+</html>
